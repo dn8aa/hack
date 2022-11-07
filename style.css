@@ -1,0 +1,315 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Nanum Brush Script", cursive;
+  /* color: rgb(79, 56, 42); */
+  color: black;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* https://i.pinimg.com/564x/93/96/4c/93964c9f08ffb6dddc3d4da2881a8d2f.jpg */
+.leftPage {
+  width: 504px;
+  height: 650px;
+  background-image: url("https://i.pinimg.com/564x/93/96/4c/93964c9f08ffb6dddc3d4da2881a8d2f.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.rightPage {
+  width: 504px;
+  height: 650px;
+  background-image: url("https://i.pinimg.com/564x/dc/61/8d/dc618d7ef160680d410eb2ba85efafc2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-create {
+  padding: 3%;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 30px;
+  border-radius: 40px;
+  border: none;
+  background-color: rgb(116, 188, 255);
+  color: white;
+  margin-top: 20%;
+  /* display: none; */
+}
+.modal-create {
+  margin-top: 20%;
+  background-image: url("https://i.pinimg.com/564x/ea/d0/ea/ead0ea71b3a2f34fb1dad87fee354cdc.jpg");
+  background-size: contain;
+  width: 282px;
+  height: 283px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  display: none;
+}
+
+.modal-edit {
+  margin-top: 20%;
+  background-image: url("https://i.pinimg.com/564x/6d/02/0d/6d020d8a8fedde57307b7c7c8a5a3ae7.jpg");
+  background-size: contain;
+  width: 282px;
+  height: 283px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  display: none;
+}
+
+.inputs-create {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs-create input {
+  padding: 2%;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(158, 232, 239);
+  margin: 1%;
+}
+.create-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+.create-save,
+.create-cancel {
+  padding: 7%;
+  font-family: "Nanum Brush Script", cursive;
+  border-radius: 20px;
+  font-size: 20px;
+  border: none;
+  margin: 2%;
+  background-color: rgb(227, 255, 127);
+  color: rgb(30, 12, 12);
+}
+
+.search {
+  margin: 10%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-input {
+  padding: 2%;
+  border-radius: 20px;
+  border: 2px solid rgb(158, 232, 239);
+  background-color: transparent;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 20px;
+}
+.find-btn {
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 20px;
+  padding: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(255, 245, 151);
+  margin-left: 2%;
+}
+
+/* !cards */
+.book {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-color: pink;
+  border-radius: 20px; */
+  /* border: 2px solid red; */
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(255, 212, 219);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(204, 182, 215);
+  border-radius: 5px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: ; */
+  align-items: center;
+  /* position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-color: pink;
+  border-radius: 20px; */
+}
+.front {
+  margin-top: 5%;
+  width: 80%;
+  height: 100%;
+  /* height: px; */
+  /* height: 45%; */
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 5%;
+  /* display: none; */
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+img {
+  height: 80%;
+  padding: 2%;
+}
+p {
+  margin: 0;
+  width: 40%;
+  font-size: 18px;
+}
+.dateN {
+  width: 40%;
+  word-wrap: break-word;
+  /* height: 100%; */
+}
+.peopleN {
+  width: 100%;
+  font-size: 18px;
+}
+/* !modal ememories  */
+/* .modal-memories {
+  padding: 3%;
+
+  margin-top: 5%;
+  width: 80%;
+  height: 90%;
+
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: aliceblue;
+} */
+
+.btnsEdit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.descr {
+  height: 20%;
+  width: 100%;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+/* !pagination */
+.nav {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 3%;
+  /* height: 20%; */
+}
+.active {
+    color: red !important;
+    background-color: rgb(188, 242, 242) !important;
+    width: 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+li {
+  margin: 5%;
+}
+a {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.btnsEdit button {
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 20px;
+  padding: 12%;
+  padding-left: 30%;
+  padding-right: 30%;
+  /* padding-left: 4%; */
+  /* padding-right: 4%; */
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(255, 245, 151);
+  margin-left: 2%;
+}
+img {
+  height: 50%;
+}
+.pagination-list {
+width: 20%;
+display: flex;
+}
+@media only screen and (max-width: 1050px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
+

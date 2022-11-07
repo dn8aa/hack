@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="leftPage">
+            <!-- !create btn -->
+            <button class="btn-create">Create New Memo!</button>
+
+            <!-- !modal create -->
+            <div class="modal-create">
+                <div class="inputs-create">
+                    <input class="image" type="text" placeholder="image url">
+                    <input class="date" maxlength="10" type="text" placeholder="date dd/mm/yy">
+                    <input class="memory" type="text" maxlength="100" placeholder="memory">
+                    <input class="people" type="text"  placeholder="people on picture">
+                </div>
+                <div class="create-btns">
+                    <button type="submit" id="create-save" class="create-save">Save</button>
+                    <button type="submit" id="create-close" class="create-cancel">Cancel</button>
+                </div>
+            </div>
+
+            <!-- !modal edit -->
+            <div class="modal-edit">
+                <div class="inputs-create">
+                    <input class="edit-image" type="text" placeholder="image url">
+                    <input class="edit-date" maxlength="10" type="text" placeholder="date">
+                    <input class="edit-memory" type="text"  maxlength="100" placeholder="memory">
+                    <input class="edit-people" type="text" placeholder="people on picture">
+                </div>
+                <div class="create-btns">
+                    <button type="submit" id="edit-save" class="create-save">Edit</button>
+                    <button type="submit" id="edit-close" class="create-cancel">Cancel</button>
+                </div>
+            </div>
+
+
+            <!-- !search -->
+            <div class="search">
+                <input class="search-input" type="text" name="" id="search-input" placeholder="search for">
+                <button class="find-btn" type="submit">Find</button>
+            </div>
+
+
+        </div>
+
+
+        <div class="rightPage">
+
+            <div class="book">
+                <!-- <div class="card">
+                    <div class="front">
+                        <img src="https://i.pinimg.com/236x/14/42/f0/1442f06545b28bacd83c3edc0d8fe3c9.jpg" alt="">
+                        <div class="info">
+                            <p class="dateN">DATE:</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="modal-memories">
+                        <div class="peopleN">PEOPLE:</div>
+                        <div class="descr">MEMORIES:</div>
+                        <div class="btnsEdit">
+                            <button id="" class="btnEdit btn-edit">edit</button>
+                            <button id="" class="btnDelete btn-delete">delete</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <nav aria-label="Page navigation example" class="nav">
+                <ul class="pagination d-flex justify-content-center">
+                    <li class="page-item prev">
+                        <a class="page-link " href="#">Previous</a>
+                    </li>
+                    <!-- <li class="page-item"><a class="page-link" href="#">1</a></li> -->
+                    <div class="pagination-list d-flex"></div>
+                    <li class="page-item next">
+                        <a class="page-link " href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
